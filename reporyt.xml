@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="2" hostname="NITRO-5-1109" name="pytest" skipped="1" tests="5" time="0.053" timestamp="2022-03-29T18:09:05.099415"><testcase classname="test_prime" name="test_prime[3-True]" time="0.001" /><testcase classname="test_prime" name="test_prime[10-False]" time="0.001" /><testcase classname="test_prime" name="test_notPrime" time="0.000"><skipped message="unconditional skip" type="pytest.skip">C:\Users\shobh\PycharmProjects\PyTestClassExcercise\test_prime.py:9: unconditional skip</skipped></testcase><testcase classname="test_prime" name="test_palindrome[12321-True]" time="0.001"><failure message="TypeError: 'int' object is not subscriptable">num = 12321, output = True
+
+    @pytest.mark.parametrize("num,output",[(12321,True),(1234,False)])
+    def test_palindrome(num,output):
+&gt;       r = Prime.palindrome(num)
+
+test_prime.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = 12321
+
+    def palindrome(a):
+&gt;       b = a[::-1]
+E       TypeError: 'int' object is not subscriptable
+
+Prime.py:10: TypeError</failure></testcase><testcase classname="test_prime" name="test_palindrome[1234-False]" time="0.001"><failure message="TypeError: 'int' object is not subscriptable">num = 1234, output = False
+
+    @pytest.mark.parametrize("num,output",[(12321,True),(1234,False)])
+    def test_palindrome(num,output):
+&gt;       r = Prime.palindrome(num)
+
+test_prime.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = 1234
+
+    def palindrome(a):
+&gt;       b = a[::-1]
+E       TypeError: 'int' object is not subscriptable
+
+Prime.py:10: TypeError</failure></testcase></testsuite></testsuites>
